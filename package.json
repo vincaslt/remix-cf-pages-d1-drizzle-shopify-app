@@ -1,0 +1,66 @@
+{
+  "name": "remix-cf-demo-app",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && remix build",
+    "dev": "shopify app dev",
+    "config:link": "shopify app config link",
+    "config:push": "shopify app config push",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy",
+    "pages:deploy": "npm run build && wrangler pages deploy ./public",
+    "config:use": "shopify app config use",
+    "env": "shopify app env",
+    "start": "wrangler pages dev ./public --live-reload --kv=SESSION",
+    "docker-start": "npm run setup && npm run start",
+    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
+    "shopify": "shopify"
+  },
+  "dependencies": {
+    "@remix-run/cloudflare": "^2.4.1",
+    "@remix-run/cloudflare-pages": "^2.4.1",
+    "@remix-run/css-bundle": "^2.4.1",
+    "@remix-run/dev": "^2.0.0",
+    "@remix-run/node": "^2.0.0",
+    "@remix-run/react": "^2.0.0",
+    "@remix-run/serve": "^2.0.0",
+    "@shopify/app": "3.52.0",
+    "@shopify/cli": "3.52.0",
+    "@shopify/polaris": "^12.0.0",
+    "@shopify/shopify-api": "^8.0.2",
+    "@shopify/shopify-app-remix": "^2.1.0",
+    "@shopify/shopify-app-session-storage-kv": "^2.0.2",
+    "drizzle-orm": "^0.29.2",
+    "isbot": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "@remix-run/eslint-config": "^2.0.0",
+    "@shopify/app-bridge-types": "^0.0.3",
+    "@types/eslint": "^8.40.0",
+    "@types/node": "^20.6.3",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "drizzle-kit": "^0.20.9",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.2.2",
+    "wrangler": "^3.22.1"
+  },
+  "workspaces": [
+    "extensions/*"
+  ],
+  "trustedDependencies": [
+    "@shopify/plugin-cloudflare"
+  ],
+  "author": "vincaslt"
+}

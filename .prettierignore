@@ -1,0 +1,12 @@
+package.json
+.cache
+.shadowenv.d
+.vscode
+build
+node_modules
+public
+shopify-app-remix
+.github
+tmp
+*.yml
+.shopify

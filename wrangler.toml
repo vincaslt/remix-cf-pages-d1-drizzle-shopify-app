@@ -1,0 +1,7 @@
+compatibility_date = "2022-11-07"
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "dev-remix-cf-demo"
+database_id = "53df5d71-de80-4391-a75f-081ae2058028"
+preview_database_id = "DB"

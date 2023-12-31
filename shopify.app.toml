@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "remix-cf-demo-app"
+client_id = "5edaea3d9d0e80d9fd176af03faf7422"
+application_url = "https://software-cathedral-engineer-warner.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://software-cathedral-engineer-warner.trycloudflare.com/auth/callback",
+  "https://software-cathedral-engineer-warner.trycloudflare.com/auth/shopify/callback",
+  "https://software-cathedral-engineer-warner.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "remix-cloudflare-app-demo.myshopify.com"
