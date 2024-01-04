@@ -1,6 +1,6 @@
 # Shopify App Template - Remix+Drizzle with D1 on Cloudflare Pages
 
-This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using the [Remix](https://remix.run) framework that can be hosted on [Cloudflare Pages](https://pages.dev/). More information and detailed instructions here: https://codefrontend.com/deploy-shopify-apps-on-clouflare/
+This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using the [Remix](https://remix.run) framework that can be hosted on [Cloudflare Pages](https://pages.dev/). More information and detailed instructions here: [https://codefrontend.com/deploy-shopify-apps-on-clouflare/](https://codefrontend.com/deploy-shopify-apps-on-cloudflare/)
 
 Rather than cloning this repo, you can use your preferred package manager and the Shopify CLI with [these steps](https://shopify.dev/docs/apps/getting-started/create) then following instruction in the blog post to configure it incrementally.
 
